@@ -1,11 +1,14 @@
 #include <iostream>
 #include <chrono>
 #include <ctime>
+#include <cstdlib>
 #include "Markup.h"
+#include "PersonalBudget.h"
+#include "AuxiliaryMethods.h"
 
 using namespace std;
 
-string getCurrentDate(void);
+//string getCurrentDate(void);
 
 int main()
 {
@@ -19,7 +22,8 @@ int main()
         xml.AddElem("Users");
     }
 
-    string CurrentDate = getCurrentDate();
+    AuxiliaryMethods ObjectAuxiliaryMethods;
+    string CurrentDate = ObjectAuxiliaryMethods.getCurrentDate();
 
     xml.FindElem();
     xml.IntoElem();
@@ -34,9 +38,11 @@ int main()
     return 0;
 }
 
-    string getCurrentDate(void)
+/*
+    string getCurrentDate()
     {
         auto end = chrono::system_clock::now();
         time_t end_time = chrono::system_clock::to_time_t(end);
         return ctime(&end_time);
     }
+*/

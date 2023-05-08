@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>306</y>
+      <w>288</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>PersonalBudget
+--
+PersonalBudget()
+~PersonalBudget()
++ addIncome() : void
++ addExpense() : void
++ financialStatementCurrentMonth() : void
++ financialStatementPreviousMonth() : void
++ financialStatementChoosenTimePeriod() : void
++ changePasswordLoggedUser(): void
++ userLogout(): void
++ userRegistration(): void
++ userLogging(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>225</y>
+      <w>153</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- id : Integer
+- name : String
+- surname : String
+- login : String
+- password : String
+--
++ setId() : void
++ setName() : void
++ setSurname() : void
++ setLogin() : void
++ setPassword() : void
++ getId() : Integer
++ getName() : String
++ getSurname() : String
++ getLogin() : String
++ getPassword() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>585</y>
+      <w>126</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>FileWithUsersXML
+--
+- userId : Integer
+- login : String
+- password : String
+- name : String
+- Surname : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>306</x>
+      <y>585</y>
+      <w>135</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>FileWithIncomesXML
+--
+- incomeId : Integer
+- userId : Integer
+- date : String
+- item : Integer
+- amount : Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>99</x>
+      <y>585</y>
+      <w>144</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>FileWithExpensesXML
+--
+- expenseId : Integer
+- userId : String
+- date : String
+- item : Integer
+- amount : Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>945</x>
+      <y>225</y>
+      <w>252</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>ExpenseManager
+--
+- ID_LOGGED_USER: Integer
+- fileWithExpenses: FileWithExpensesXML
+--
++ addNewExpense() : void
++ showAllExpenses() : void
++ groupExpensesByDate() : void
++ searchExpensesByGivenDate() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>225</y>
+      <w>234</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>IncomeManager
+--
+- ID_LOGGED_USER: Integer
+- fileWithIncomes: FileWithIncomesXML
+--
++ addNewIncome() : void
++ showAllIncomes() : void
++ groupIncomesByDate() : void
++ searchIncomesByGivenDate() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
