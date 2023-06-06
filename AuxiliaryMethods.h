@@ -10,7 +10,9 @@ using namespace std;
 
 class AuxiliaryMethods
 {
-
+    bool checkYear(string date);
+    bool checkMonth(string date);
+    bool checkDay(string date);
 
 public:
     string getCurrentDate();
