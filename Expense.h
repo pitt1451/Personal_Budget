@@ -15,7 +15,7 @@ class Expense
     int amount;
 
 public:
-    void Expense();
+    Expense();
 }
 ;
 

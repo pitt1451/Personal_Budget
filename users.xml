@@ -427,4 +427,39 @@
 <CurrentDate>Tue Jun 06 21:32:23 2023
 </CurrentDate>
 </User>
+<User>
+<UserId>1</UserId>
+<Login>Piotr</Login>
+<Password>123</Password>
+<CurrentDate>Mon Jun 26 19:31:30 2023
+</CurrentDate>
+</User>
+<User>
+<UserId>1</UserId>
+<Login>Piotr</Login>
+<Password>123</Password>
+<CurrentDate>Mon Jun 26 19:34:39 2023
+</CurrentDate>
+</User>
+<User>
+<UserId>1</UserId>
+<Login>Piotr</Login>
+<Password>123</Password>
+<CurrentDate>Mon Jun 26 19:35:34 2023
+</CurrentDate>
+</User>
+<User>
+<UserId>1</UserId>
+<Login>Piotr</Login>
+<Password>123</Password>
+<CurrentDate>Mon Jun 26 19:39:29 2023
+</CurrentDate>
+</User>
+<User>
+<UserId>1</UserId>
+<Login>Piotr</Login>
+<Password>123</Password>
+<CurrentDate>Mon Jun 26 19:41:11 2023
+</CurrentDate>
+</User>
 </Users>

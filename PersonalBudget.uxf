@@ -29,12 +29,15 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>56</x>
+      <x>128</x>
       <y>504</y>
       <w>328</w>
       <h>208</h>
     </coordinates>
     <panel_attributes>PersonalBudget
+--
+- UserManager : userManager
+- BudgetManager: *budgetManager
 --
 PersonalBudget()
 ~PersonalBudget()
@@ -55,7 +58,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1384</x>
+      <x>1456</x>
       <y>408</y>
       <w>256</w>
       <h>72</h>
@@ -70,7 +73,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1272</x>
+      <x>1344</x>
       <y>936</y>
       <w>144</w>
       <h>112</h>
@@ -87,7 +90,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>952</x>
+      <x>1024</x>
       <y>936</y>
       <w>264</w>
       <h>112</h>
@@ -103,7 +106,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
+      <x>688</x>
       <y>936</y>
       <w>288</w>
       <h>112</h>
@@ -119,7 +122,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
+      <x>872</x>
       <y>616</y>
       <w>256</w>
       <h>232</h>
@@ -145,7 +148,7 @@ PersonalBudget()
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>416</x>
+      <x>488</x>
       <y>256</y>
       <w>264</w>
       <h>208</h>
@@ -169,7 +172,7 @@ Dependency:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>352</x>
       <y>344</y>
       <w>152</w>
       <h>24</h>
@@ -182,7 +185,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>352</x>
       <y>288</y>
       <w>152</w>
       <h>24</h>
@@ -193,7 +196,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>352</x>
       <y>384</y>
       <w>152</w>
       <h>24</h>
@@ -204,7 +207,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>352</x>
       <y>416</y>
       <w>152</w>
       <h>40</h>
@@ -216,7 +219,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>264</x>
+      <x>336</x>
       <y>0</y>
       <w>560</w>
       <h>232</h>
@@ -241,7 +244,7 @@ which is used don't occurs on the list of class member, which used it.</panel_at
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>544</x>
+      <x>616</x>
       <y>744</y>
       <w>224</w>
       <h>72</h>
@@ -256,7 +259,7 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>448</x>
       <y>504</y>
       <w>440</w>
       <h>176</h>
@@ -267,7 +270,7 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1032</x>
+      <x>1104</x>
       <y>320</y>
       <w>320</w>
       <h>632</h>
@@ -279,7 +282,7 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
+      <x>288</x>
       <y>704</y>
       <w>24</w>
       <h>104</h>
@@ -291,7 +294,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1416</x>
+      <x>1488</x>
       <y>584</y>
       <w>232</w>
       <h>232</h>
@@ -311,7 +314,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>864</x>
+      <x>936</x>
       <y>808</y>
       <w>672</w>
       <h>328</h>
@@ -322,7 +325,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1160</x>
+      <x>1232</x>
       <y>808</y>
       <w>352</w>
       <h>312</h>
@@ -333,7 +336,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1328</x>
+      <x>1400</x>
       <y>808</y>
       <w>160</w>
       <h>296</h>
@@ -344,7 +347,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1048</x>
+      <x>1120</x>
       <y>400</y>
       <w>280</w>
       <h>144</h>
@@ -363,7 +366,7 @@ FileWithUsersXML.</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1576</x>
+      <x>1648</x>
       <y>832</y>
       <w>256</w>
       <h>120</h>
@@ -381,7 +384,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>64</x>
+      <x>136</x>
       <y>792</y>
       <w>296</w>
       <h>344</h>
@@ -414,7 +417,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>72</x>
       <y>1240</y>
       <w>160</w>
       <h>144</h>
@@ -433,7 +436,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>232</x>
+      <x>304</x>
       <y>1240</y>
       <w>144</w>
       <h>144</h>
@@ -452,7 +455,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>296</x>
+      <x>368</x>
       <y>1128</y>
       <w>24</w>
       <h>128</h>
@@ -463,7 +466,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
+      <x>144</x>
       <y>1128</y>
       <w>24</w>
       <h>128</h>
@@ -474,7 +477,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
+      <x>360</x>
       <y>1040</y>
       <w>712</w>
       <h>456</h>
@@ -486,7 +489,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
+      <x>136</x>
       <y>1040</y>
       <w>608</w>
       <h>480</h>
@@ -498,7 +501,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>872</x>
+      <x>944</x>
       <y>272</y>
       <w>168</w>
       <h>288</h>
@@ -526,7 +529,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>944</x>
+      <x>1016</x>
       <y>208</y>
       <w>576</w>
       <h>216</h>
@@ -538,7 +541,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1496</x>
+      <x>1568</x>
       <y>472</y>
       <w>24</w>
       <h>128</h>
@@ -549,7 +552,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>936</x>
+      <x>1008</x>
       <y>552</y>
       <w>24</w>
       <h>80</h>
@@ -560,7 +563,7 @@ service from AuxiliaryMethods class.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>928</x>
+      <x>1000</x>
       <y>808</y>
       <w>536</w>
       <h>96</h>

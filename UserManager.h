@@ -3,6 +3,10 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
+#include "User.h"
+#include "UserFile.h"
 
 using namespace std;
 

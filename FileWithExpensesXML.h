@@ -3,6 +3,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
+#include "Expense.h"
 
 using namespace std;
 
@@ -12,8 +15,7 @@ class FileWithExpensesXML
 
     vector <Expense> loadUserExpenses();
     void saveUserExpenseToFile();
-}
-;
+};
 
 
 #endif

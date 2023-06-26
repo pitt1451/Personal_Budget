@@ -3,6 +3,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
+#include "Income.h"
 
 using namespace std;
 
@@ -12,8 +15,6 @@ class FileWithIncomesXML
 
     vector <Income> loadUserIncomes();
     void saveUserIncomeToFile();
-}
-;
-
+};
 
 #endif

@@ -4,6 +4,14 @@
 #include <iostream>
 #include <vector>
 
+#include "User.h"
+#include "FileWithUsersXML.h"
+#include "FileWithIncomesXML.h"
+#include "FileWithExpensesXML.h"
+#include "AuxiliaryMethods.h"
+#include "Income.h"
+#include "Expense.h"
+
 using namespace std;
 
 class BudgetManager

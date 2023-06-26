@@ -3,6 +3,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+
+#include "User.h"
 
 using namespace std;
 
@@ -10,7 +13,7 @@ class UserFile
 {
 public:
     void addUserToFile();
-    vector <user> loadUserFromFile();
+    vector <User> loadUserFromFile();
 }
 ;
 

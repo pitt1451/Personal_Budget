@@ -24,7 +24,7 @@ public:
         this->amount = amount;
     }
 
-    void Income();
+    Income();
 }
 ;
 
