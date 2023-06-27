@@ -3,14 +3,21 @@
 
 #include <iostream>
 
+#include "BudgetManager.h"
+#include "UserManager.h"
+
 using namespace std;
 
 class PersonalBudget
 {
+    BudgetManager budgetManager;
+    UserManager userManager;
 
 public:
-    PersonalBudget(string fileWithExpensesXML, string fileWithIncomesXML,
-    string fileWithUsersXML);
+    PersonalBudget(string fileWithExpensesXML, string fileWithIncomesXML, string fileWithUsersXML)
+    : budgetManager(fileWithExpensesXML, fileWithIncomesXML)
+    {
+    }
 
     ~PersonalBudget()
     {

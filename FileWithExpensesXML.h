@@ -15,6 +15,9 @@ class FileWithExpensesXML
 
     vector <Expense> loadUserExpenses();
     void saveUserExpenseToFile();
+
+public:
+    void LoadFileWithExpenses();
 };
 
 

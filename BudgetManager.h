@@ -24,6 +24,11 @@ class BudgetManager
     void sortCashByDate();
 
 public:
+    BudgetManager(string fileWithExpensesXML, string fileWithIncomesXML)
+    {
+
+    }
+
     void addNewIncome();
     void loadUserIncomes();
     void showAllIncomes();
@@ -37,7 +42,6 @@ public:
     void searchExpensesByGivenDate();
 
     void showCashDifference();
-}
-;
+};
 
 #endif
