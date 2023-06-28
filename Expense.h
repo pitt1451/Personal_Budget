@@ -9,7 +9,7 @@ using namespace std;
 class Expense
 {
     int expenseId;
-    string userId;
+    int userId;
     string date;
     int item;
     int amount;

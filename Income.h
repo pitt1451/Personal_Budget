@@ -9,13 +9,13 @@ using namespace std;
 class Income
 {
     int incomeId;
-    string userId;
+    int userId;
     string date;
     int item;
     int amount;
 
 public:
-    Income(int incomeId=0, string userId="", string date="", int item=0, int amount=0)
+    Income(int incomeId=0, int userId=0, string date="", int item=0, int amount=0)
     {
         this->incomeId = incomeId;
         this->userId = userId;

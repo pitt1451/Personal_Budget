@@ -17,7 +17,7 @@ class FileWithExpensesXML
     void saveUserExpenseToFile();
 
 public:
-    void LoadFileWithExpenses();
+    void loadFileWithExpenses();
 };
 
 
