@@ -12,26 +12,24 @@ using namespace std;
 
 class UserManager
 {
+    int loggedUserId;
+    vector <User> users;
+    UserFile userFile;
     int getLoggedUserId();
     int setLoggedUserId();
-    vector <User> users;
-
-    UserFile userFile;
 
 public:
     UserManager(string userFileName)
     {
     }
-
     void registerUser();
     void logInUser();
     void logOutUser();
-    void changeUserPassword();
+    void changeLoggedUserPassword();
 
     int getNewUserId();
-    bool ifLoginExists();
+    bool ifLoginExists(string login);
     User setNewUserData();
-}
-;
+};
 
 #endif

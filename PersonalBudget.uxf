@@ -29,8 +29,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>464</y>
+      <x>56</x>
+      <y>512</y>
       <w>336</w>
       <h>272</h>
     </coordinates>
@@ -61,14 +61,14 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1648</x>
-      <y>408</y>
+      <x>1384</x>
+      <y>456</y>
       <w>256</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>UserFile
 --
-+ addUserToFile() : void
++ addUserToFile(User user) : void
 + loadUserFromFile() : vector &lt;user&gt;
 </panel_attributes>
     <additional_attributes/>
@@ -76,8 +76,8 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1536</x>
-      <y>936</y>
+      <x>1272</x>
+      <y>984</y>
       <w>144</w>
       <h>112</h>
     </coordinates>
@@ -93,8 +93,8 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1216</x>
-      <y>936</y>
+      <x>952</x>
+      <y>984</y>
       <w>264</w>
       <h>112</h>
     </coordinates>
@@ -109,8 +109,8 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>880</x>
-      <y>936</y>
+      <x>616</x>
+      <y>984</y>
       <w>288</w>
       <h>112</h>
     </coordinates>
@@ -126,22 +126,24 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1064</x>
-      <y>616</y>
-      <w>256</w>
-      <h>232</h>
+      <x>800</x>
+      <y>648</y>
+      <w>288</w>
+      <h>256</h>
     </coordinates>
     <panel_attributes>UserManager
 --
-- &lt;&lt;get/set&gt;&gt; loggedUserId : Integer
+- loggedUserId : Integer
 - users : vector &lt;User&gt;
 - userFile : UserFile
+- &lt;&lt;get/set&gt;&gt; loggedUserId : Integer
 --
 UserManager()
+
 + registerUser() : void
 + logInUser() : void
 + logOutUser() : void
-+ changeUserPassword () : void
++ changeLoggedUserPassword () : void
 
 - getNewUserId() : Integer
 - ifLoginExists() : bool
@@ -152,8 +154,8 @@ UserManager()
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>680</x>
-      <y>256</y>
+      <x>416</x>
+      <y>304</y>
       <w>264</w>
       <h>208</h>
     </coordinates>
@@ -176,8 +178,8 @@ Dependency:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>344</y>
+      <x>280</x>
+      <y>392</y>
       <w>152</w>
       <h>24</h>
     </coordinates>
@@ -189,8 +191,8 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>288</y>
+      <x>280</x>
+      <y>336</y>
       <w>152</w>
       <h>24</h>
     </coordinates>
@@ -200,8 +202,8 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>384</y>
+      <x>280</x>
+      <y>432</y>
       <w>152</w>
       <h>24</h>
     </coordinates>
@@ -211,8 +213,8 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
-      <y>416</y>
+      <x>280</x>
+      <y>464</y>
       <w>152</w>
       <h>40</h>
     </coordinates>
@@ -223,8 +225,8 @@ bg=BLACK</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>528</x>
-      <y>0</y>
+      <x>264</x>
+      <y>48</y>
       <w>560</w>
       <h>232</h>
     </coordinates>
@@ -248,8 +250,8 @@ which is used don't occurs on the list of class member, which used it.</panel_at
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>808</x>
-      <y>744</y>
+      <x>544</x>
+      <y>792</y>
       <w>224</w>
       <h>72</h>
     </coordinates>
@@ -263,19 +265,19 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
-      <y>504</y>
+      <x>384</x>
+      <y>552</y>
       <w>432</w>
-      <h>176</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;490.0;10.0;490.0;200.0;520.0;200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;270.0;10.0;270.0;130.0;520.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1296</x>
-      <y>320</y>
+      <x>1032</x>
+      <y>368</y>
       <w>320</w>
       <h>632</h>
     </coordinates>
@@ -286,8 +288,8 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>728</y>
+      <x>216</x>
+      <y>776</y>
       <w>24</w>
       <h>80</h>
     </coordinates>
@@ -298,8 +300,8 @@ bg=BLACK</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1680</x>
-      <y>584</y>
+      <x>1416</x>
+      <y>632</y>
       <w>232</w>
       <h>232</h>
     </coordinates>
@@ -318,8 +320,8 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1128</x>
-      <y>808</y>
+      <x>864</x>
+      <y>856</y>
       <w>672</w>
       <h>328</h>
     </coordinates>
@@ -329,8 +331,8 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1424</x>
-      <y>808</y>
+      <x>1160</x>
+      <y>856</y>
       <w>352</w>
       <h>312</h>
     </coordinates>
@@ -340,8 +342,8 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1592</x>
-      <y>808</y>
+      <x>1328</x>
+      <y>856</y>
       <w>160</w>
       <h>296</h>
     </coordinates>
@@ -351,8 +353,8 @@ _+ getCurrentDate() : String_
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1312</x>
-      <y>400</y>
+      <x>1048</x>
+      <y>448</y>
       <w>280</w>
       <h>144</h>
     </coordinates>
@@ -370,8 +372,8 @@ FileWithUsersXML.</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1840</x>
-      <y>832</y>
+      <x>1576</x>
+      <y>880</y>
       <w>256</w>
       <h>120</h>
     </coordinates>
@@ -388,8 +390,8 @@ service from AuxiliaryMethods class.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>328</x>
-      <y>792</y>
+      <x>64</x>
+      <y>840</y>
       <w>296</w>
       <h>352</h>
     </coordinates>
@@ -422,8 +424,8 @@ BudgetManager()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
-      <y>1240</y>
+      <x>0</x>
+      <y>1288</y>
       <w>160</w>
       <h>144</h>
     </coordinates>
@@ -441,8 +443,8 @@ Expense()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>496</x>
-      <y>1240</y>
+      <x>232</x>
+      <y>1288</y>
       <w>144</w>
       <h>144</h>
     </coordinates>
@@ -460,8 +462,8 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>1136</y>
+      <x>296</x>
+      <y>1184</y>
       <w>24</w>
       <h>120</h>
     </coordinates>
@@ -471,8 +473,8 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>336</x>
-      <y>1136</y>
+      <x>72</x>
+      <y>1184</y>
       <w>24</w>
       <h>120</h>
     </coordinates>
@@ -482,8 +484,8 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>1040</y>
+      <x>288</x>
+      <y>1088</y>
       <w>712</w>
       <h>456</h>
     </coordinates>
@@ -494,8 +496,8 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
-      <y>1040</y>
+      <x>64</x>
+      <y>1088</y>
       <w>608</w>
       <h>480</h>
     </coordinates>
@@ -506,9 +508,9 @@ Income()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1136</x>
-      <y>272</y>
-      <w>168</w>
+      <x>704</x>
+      <y>320</y>
+      <w>336</w>
       <h>288</h>
     </coordinates>
     <panel_attributes>User
@@ -519,11 +521,11 @@ Income()</panel_attributes>
 - login : String
 - password : String
 --
-+ setId() : void
++ setId(int newId) : void
 + setName() : void
 + setSurname() : void
-+ setLogin() : void
-+ setPassword() : void
++ setLogin(string newLogin) : void
++ setPassword(string newPassword) : void
 + getId() : Integer
 + getName() : String
 + getSurname() : String
@@ -534,8 +536,8 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1208</x>
-      <y>208</y>
+      <x>944</x>
+      <y>256</y>
       <w>576</w>
       <h>216</h>
     </coordinates>
@@ -546,8 +548,8 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1760</x>
-      <y>472</y>
+      <x>1496</x>
+      <y>520</y>
       <w>24</w>
       <h>128</h>
     </coordinates>
@@ -557,23 +559,23 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1200</x>
-      <y>552</y>
+      <x>936</x>
+      <y>600</y>
       <w>24</w>
-      <h>80</h>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1192</x>
-      <y>808</y>
+      <x>928</x>
+      <y>856</y>
       <w>536</w>
-      <h>96</h>
+      <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;100.0;650.0;100.0;650.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;140.0;650.0;140.0;650.0;10.0</additional_attributes>
   </element>
 </diagram>

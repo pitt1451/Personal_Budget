@@ -12,10 +12,9 @@ using namespace std;
 class UserFile
 {
 public:
-    void addUserToFile();
+    void addUserToFile(User user);
     vector <User> loadUserFromFile();
-}
-;
+};
 
 
 #endif

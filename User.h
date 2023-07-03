@@ -15,18 +15,16 @@ class User
     string password;
 
 public:
-    void setId();
+    void setId(int newId);
     void setName();
     void setSurname();
-    void setLogin();
-    void setPassword();
+    void setLogin(string newLogin);
+    void setPassword(string newPassword);
     int getId();
     string getName();
     string getSurname();
     string getLogin();
     string getPassword();
-}
-;
-
+};
 
 #endif
