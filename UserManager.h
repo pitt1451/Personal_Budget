@@ -15,21 +15,22 @@ class UserManager
     int loggedUserId;
     vector <User> users;
     UserFile userFile;
-    int getLoggedUserId();
-    int setLoggedUserId();
+    User setNewUserData();
 
 public:
-    UserManager(string userFileName)
+
+    UserManager(string userFileName) : userFile(userFileName)
     {
+        loggedUserId = 0;
+        users = userFile.loadUsersFromFile();
     }
     void registerUser();
     void logInUser();
     void logOutUser();
     void changeLoggedUserPassword();
-
-    int getNewUserId();
     bool ifLoginExists(string login);
-    User setNewUserData();
+    int getLoggedUserId();
+    int getNewUserId();
 };
 
 #endif

@@ -19,6 +19,7 @@ public:
     PersonalBudget(string expensesFileName, string incomesFileName, string usersFileName)
     : userManager(usersFileName), INCOMES_FILE_NAME(incomesFileName), EXPENSES_FILE_NAME(expensesFileName)
     {
+        budgetManager = nullptr;
     }
 
     ~PersonalBudget()

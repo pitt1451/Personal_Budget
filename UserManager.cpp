@@ -1,13 +1,12 @@
 #include "UserManager.h"
 #include "UserFile.h"
 #include "User.h"
+#include "AuxiliaryMethods.h"
 
 int UserManager::getLoggedUserId()
 {
     return loggedUserId;
 }
-
-//setLoggedUserId()
 
 void UserManager::registerUser()
 {
@@ -24,7 +23,6 @@ void UserManager::registerUser()
 void UserManager::logInUser()
 {
     string login = "", password = "";
-    int loggedUserId;
 
     cout << "USER LOG-IN: " << endl;
     cout << "Please give a login: ";
