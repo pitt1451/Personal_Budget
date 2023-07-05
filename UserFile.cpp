@@ -8,5 +8,9 @@ void UserFile::addUserToFile(User user)
 
 vector <User> UserFile::loadUsersFromFile()
 {
+    vector <User> users;
     cout << "User has been successfully loaded from file" << endl;
+
+
+    return users;
 }

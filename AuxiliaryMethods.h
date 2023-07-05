@@ -16,7 +16,7 @@ class AuxiliaryMethods
 
 public:
     string getCurrentDate();
-    string readLine();
+    static string readLine();
 };
 
 

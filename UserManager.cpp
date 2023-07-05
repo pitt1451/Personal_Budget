@@ -26,7 +26,7 @@ void UserManager::logInUser()
 
     cout << "USER LOG-IN: " << endl;
     cout << "Please give a login: ";
-    cin >> login;
+    login = AuxiliaryMethods::readLine();
 
     for (int i = 0; i < (int)users.size(); i++)
     {
@@ -35,7 +35,7 @@ void UserManager::logInUser()
             for (int numberOfAttempts = 3; numberOfAttempts > 0; numberOfAttempts--)
             {
                 cout << "Enter a password. Attempts left: " << numberOfAttempts << ": ";
-                cin >> password;
+                password = AuxiliaryMethods::readLine();
 
                 if (users[i].getPassword() == password)
                 {
@@ -63,7 +63,7 @@ void UserManager::changeLoggedUserPassword()
 {
     string newPassword = "";
     cout << "Please enter new password: ";
-    cin >> newPassword;
+    newPassword = AuxiliaryMethods::readLine();
 
     for (int i=0; i < (int) users.size(); i++)
     {
@@ -103,14 +103,14 @@ User UserManager::setNewUserData()
     do
     {
         cout << "Please enter your login: ";
-        cin >> login;
+        login = AuxiliaryMethods::readLine();
         user.setLogin(login);
     }
     while (ifLoginExists(login));
 
     string password;
     cout << "Please enter your password: ";
-    cin >> password;
+    password = AuxiliaryMethods::readLine();
     user.setPassword(password);
 
     return user;

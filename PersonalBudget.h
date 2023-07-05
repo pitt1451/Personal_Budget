@@ -27,6 +27,8 @@ public:
 
     }
 
+    char chooseOptionFromMainMenu();
+    char chooseOptionFromUserMenu();
     void userRegistration();
     void userLogin();
     void userLogout();

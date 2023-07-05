@@ -29,10 +29,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>56</x>
+      <x>176</x>
       <y>464</y>
       <w>336</w>
-      <h>272</h>
+      <h>304</h>
     </coordinates>
     <panel_attributes>PersonalBudget
 --
@@ -43,6 +43,8 @@
 --
 PersonalBudget()
 ~PersonalBudget()
++ chooseOptionFromMainMenu() : char
++ chooseOptionFromUserMenu() : char
 + userRegistration(): void
 + userLogin(): void
 + userLogout(): void
@@ -61,7 +63,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1384</x>
+      <x>1504</x>
       <y>408</y>
       <w>256</w>
       <h>72</h>
@@ -76,7 +78,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1272</x>
+      <x>1392</x>
       <y>936</y>
       <w>144</w>
       <h>112</h>
@@ -93,7 +95,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>952</x>
+      <x>1072</x>
       <y>936</y>
       <w>264</w>
       <h>112</h>
@@ -109,7 +111,7 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
+      <x>736</x>
       <y>936</y>
       <w>288</w>
       <h>112</h>
@@ -126,17 +128,16 @@ PersonalBudget()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
+      <x>920</x>
       <y>600</y>
       <w>288</w>
-      <h>256</h>
+      <h>240</h>
     </coordinates>
     <panel_attributes>UserManager
 --
 - loggedUserId : Integer
 - users : vector &lt;User&gt;
 - userFile : UserFile
-- &lt;&lt;get/set&gt;&gt; loggedUserId : Integer
 --
 UserManager()
 
@@ -144,17 +145,17 @@ UserManager()
 + logInUser() : void
 + logOutUser() : void
 + changeLoggedUserPassword () : void
++ ifLoginExists() : bool
++ getloggedUserId() : Integer
++ getNewUserId() : Integer
 
-- getNewUserId() : Integer
-- ifLoginExists() : bool
-- setNewUserData() : User
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>416</x>
+      <x>536</x>
       <y>256</y>
       <w>264</w>
       <h>208</h>
@@ -178,7 +179,7 @@ Dependency:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>400</x>
       <y>344</y>
       <w>152</w>
       <h>24</h>
@@ -191,7 +192,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>400</x>
       <y>288</y>
       <w>152</w>
       <h>24</h>
@@ -202,7 +203,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>400</x>
       <y>384</y>
       <w>152</w>
       <h>24</h>
@@ -213,7 +214,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>400</x>
       <y>416</y>
       <w>152</w>
       <h>40</h>
@@ -225,7 +226,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>264</x>
+      <x>384</x>
       <y>0</y>
       <w>560</w>
       <h>232</h>
@@ -250,7 +251,7 @@ which is used don't occurs on the list of class member, which used it.</panel_at
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>544</x>
+      <x>664</x>
       <y>744</y>
       <w>224</w>
       <h>72</h>
@@ -265,7 +266,7 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>384</x>
+      <x>504</x>
       <y>504</y>
       <w>432</w>
       <h>120</h>
@@ -276,7 +277,7 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1032</x>
+      <x>1152</x>
       <y>320</y>
       <w>320</w>
       <h>632</h>
@@ -288,8 +289,8 @@ PersonalBudget</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
-      <y>728</y>
+      <x>336</x>
+      <y>760</y>
       <w>24</w>
       <h>80</h>
     </coordinates>
@@ -300,7 +301,7 @@ bg=BLACK</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1416</x>
+      <x>1536</x>
       <y>584</y>
       <w>232</w>
       <h>232</h>
@@ -320,7 +321,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>864</x>
+      <x>984</x>
       <y>808</y>
       <w>672</w>
       <h>328</h>
@@ -331,7 +332,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1160</x>
+      <x>1280</x>
       <y>808</y>
       <w>352</w>
       <h>312</h>
@@ -342,7 +343,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1328</x>
+      <x>1448</x>
       <y>808</y>
       <w>160</w>
       <h>296</h>
@@ -353,7 +354,7 @@ _+ getCurrentDate() : String_
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1048</x>
+      <x>1168</x>
       <y>400</y>
       <w>280</w>
       <h>144</h>
@@ -372,7 +373,7 @@ FileWithUsersXML.</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1576</x>
+      <x>1696</x>
       <y>832</y>
       <w>256</w>
       <h>120</h>
@@ -390,8 +391,8 @@ service from AuxiliaryMethods class.
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>64</x>
-      <y>792</y>
+      <x>184</x>
+      <y>824</y>
       <w>296</w>
       <h>352</h>
     </coordinates>
@@ -424,7 +425,7 @@ BudgetManager()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>120</x>
       <y>1240</y>
       <w>160</w>
       <h>144</h>
@@ -443,7 +444,7 @@ Expense()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>232</x>
+      <x>352</x>
       <y>1240</y>
       <w>144</w>
       <h>144</h>
@@ -462,29 +463,29 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>296</x>
-      <y>1136</y>
+      <x>416</x>
+      <y>1168</y>
       <w>24</w>
-      <h>120</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>1136</y>
+      <x>192</x>
+      <y>1168</y>
       <w>24</w>
-      <h>120</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
+      <x>408</x>
       <y>1040</y>
       <w>712</w>
       <h>456</h>
@@ -496,7 +497,7 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
+      <x>184</x>
       <y>1040</y>
       <w>608</w>
       <h>480</h>
@@ -508,7 +509,7 @@ Income()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>704</x>
+      <x>824</x>
       <y>272</y>
       <w>336</w>
       <h>288</h>
@@ -536,7 +537,7 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>944</x>
+      <x>1064</x>
       <y>208</y>
       <w>576</w>
       <h>216</h>
@@ -548,7 +549,7 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1496</x>
+      <x>1616</x>
       <y>472</y>
       <w>24</w>
       <h>128</h>
@@ -559,7 +560,7 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>936</x>
+      <x>1056</x>
       <y>552</y>
       <w>24</w>
       <h>64</h>
@@ -570,12 +571,12 @@ Income()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>928</x>
+      <x>1048</x>
       <y>808</y>
       <w>536</w>
       <h>128</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;140.0;650.0;140.0;650.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;140.0;650.0;140.0;650.0;10.0</additional_attributes>
   </element>
 </diagram>

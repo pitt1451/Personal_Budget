@@ -9,8 +9,8 @@ string AuxiliaryMethods::getCurrentDate()
 
 string AuxiliaryMethods::readLine()
 {
-    string wejscie = "";
+    string input = "";
     cin.sync();
-    getline(cin, wejscie);
-    return wejscie;
+    getline(cin, input);
+    return input;
 }

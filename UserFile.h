@@ -12,7 +12,7 @@ using namespace std;
 class UserFile
 {
 public:
-    UserFile(string userFileName);
+    UserFile(string userFileName) {};
 
     void addUserToFile(User user);
     vector <User> loadUsersFromFile();
