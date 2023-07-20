@@ -16,28 +16,70 @@ int main()
 
     while (true)
     {
-
-        choice = personalBudget.chooseOptionFromMainMenu();
-        choice = personalBudget.chooseOptionFromUserMenu();
-        switch (choice)
+        if(!personalBudget.isUserLoggedIn())
         {
-        case '1':
+            choice = personalBudget.chooseOptionFromMainMenu();
 
-            break;
+            switch (choice)
+            {
+            case '1':
+                personalBudget.userRegistration();
+                break;
+            case '2':
+                personalBudget.userLogin();
+                break;
+            case '3':
+                personalBudget.userLogout();
+                break;
+            case '7':
+                exit(0);
+                break;
 
-        case '2':
-
-            break;
-
-        case '7':
-            exit(0);
-            break;
-
-        default:
-            cout << "Incorrect choice, please try again" << endl;
-            system("pause");
-            break;
+            default:
+                cout << "Incorrect choice, please try again" << endl;
+                system("pause");
+                break;
+            }
         }
+
+        else
+        {
+            choice = personalBudget.chooseOptionFromUserMenu();
+
+            switch (choice)
+            {
+            case '1':
+                personalBudget.addIncome();
+                break;
+            case '2':
+                personalBudget.showAllIncomes();
+                break;
+            case '3':
+                personalBudget.addExpense();
+                break;
+            case '4':
+                personalBudget.showAllExpenses();
+                break;
+            case '5':
+                personalBudget.financialStatementCurrentMonth();
+                break;
+            case '6':
+                personalBudget.financialStatementPreviousMonth();
+                break;
+            case '7':
+                personalBudget.financialStatementChoosenTimePeriod();
+                break;
+            case '8':
+
+                break;
+
+            default:
+                cout << "Incorrect choice, please try again" << endl;
+                system("pause");
+                break;
+            }
+        }
+
     }
     return 0;
 }

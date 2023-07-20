@@ -38,6 +38,21 @@ public:
     void financialStatementPreviousMonth();
     void financialStatementChoosenTimePeriod();
     void changePasswordLoggedUser();
+    bool isUserLoggedIn();
+
+    void showAllIncomes();
+    void groupIncomesByDate();
+    void searchIncomesByGivenDate();
+
+    void showAllExpenses();
+    void groupExpensesByDate();
+    void searchExpensesByGivenDate();
+
+
+    void loadUserIncomes();
+    void loadUserExpenses();
+
+    void showCashDifference();
 };
 
 #endif

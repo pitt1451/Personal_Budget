@@ -115,3 +115,8 @@ User UserManager::setNewUserData()
 
     return user;
 }
+
+bool UserManager::isUserLoggedIn()
+{
+    return (loggedUserId > 0);
+}

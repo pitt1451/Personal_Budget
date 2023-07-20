@@ -31,6 +31,8 @@ public:
     bool ifLoginExists(string login);
     int getLoggedUserId();
     int getNewUserId();
+
+    bool isUserLoggedIn();
 };
 
 #endif

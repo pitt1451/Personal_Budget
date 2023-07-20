@@ -47,8 +47,9 @@ char PersonalBudget::chooseOptionFromUserMenu()
 
     cout << " Please chooose the right number" << endl;
 
-    return choice;
+    cin >> choice;
 
+    return choice;
 }
 
 void PersonalBudget::addIncome()
@@ -56,9 +57,19 @@ void PersonalBudget::addIncome()
     cout << "addIncome() works!" << endl;
 }
 
+void PersonalBudget::showAllIncomes()
+{
+
+}
+
 void PersonalBudget::addExpense()
 {
     cout << "addExpense() works!" << endl;
+}
+
+void PersonalBudget::showAllExpenses()
+{
+
 }
 
 void PersonalBudget::financialStatementCurrentMonth()
@@ -89,9 +100,15 @@ void PersonalBudget::userLogout()
 void PersonalBudget::userRegistration()
 {
     cout << "userRegistration() works!" << endl;
+    system("pause");
 }
 
 void PersonalBudget::userLogin()
 {
     cout << "userLogin() works!" << endl;
+}
+
+bool PersonalBudget::isUserLoggedIn()
+{
+    return userManager.isUserLoggedIn();
 }
