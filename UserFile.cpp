@@ -6,7 +6,7 @@ void UserFile::addUserToFile(User user)
 {
     CMarkup xml;
 
-    bool fileExists = xml.Load("UserFile.xml");
+    bool fileExists = xml.Load("fileWithUsers.xml");
 
     if(!fileExists)
     {
@@ -18,10 +18,11 @@ void UserFile::addUserToFile(User user)
     xml.IntoElem();
     xml.AddElem("User");
     xml.IntoElem();
+    xml.AddElem("id", user.getId());
     xml.AddElem("login", user.getLogin());
     xml.AddElem("password", user.getPassword());
 
-    xml.Save("UserFile.xml");
+    xml.Save("fileWithUsers.xml");
 
     cout << "User has been successfully added to file" << endl;
 }
@@ -29,7 +30,43 @@ void UserFile::addUserToFile(User user)
 vector <User> UserFile::loadUsersFromFile()
 {
     vector <User> users;
-    cout << "User has been successfully loaded from file" << endl;
+    CMarkup xml;
 
+    bool fileExists = xml.Load("fileWithUsers.xml");
+
+    if (fileExists)
+    {
+        xml.FindElem("Users");
+        xml.IntoElem();
+
+        while (xml.FindElem("User"))
+        {
+            xml.IntoElem();
+            User user;
+            while (xml.FindElem())
+            {
+                int userIdFromFileWithUsers;
+                string valueOfUserData = xml.GetData();
+                string nameOfUserData = xml.GetTagName();
+                if (nameOfUserData == "id")
+                {
+                    userIdFromFileWithUsers = stoi(valueOfUserData);
+                    user.setId(userIdFromFileWithUsers);
+                }
+                else if (nameOfUserData == "login")
+                {
+                    user.setLogin(valueOfUserData);
+                }
+                else if (nameOfUserData == "password")
+                {
+                    user.setPassword(valueOfUserData);
+                }
+            }
+            users.push_back(user);
+            xml.OutOfElem();
+        }
+        cout << "Users have been successfully loaded from file" << endl;
+        system("pause");
+    }
     return users;
 }

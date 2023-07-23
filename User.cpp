@@ -27,5 +27,6 @@ void User::setPassword(string newPassword)
 
 void User::setId(int newId)
 {
-    newId = id;
+    if (newId >= 0)
+    id = newId;
 }

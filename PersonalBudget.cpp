@@ -4,6 +4,7 @@
 #include "PersonalBudget.h"
 #include "BudgetManager.h"
 #include "UserManager.h"
+#include "UserFile.h"
 
 using namespace std;
 

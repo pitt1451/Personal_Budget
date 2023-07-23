@@ -24,7 +24,8 @@ public:
 
     ~PersonalBudget()
     {
-
+        delete budgetManager;
+        budgetManager = NULL;
     }
 
     char chooseOptionFromMainMenu();
