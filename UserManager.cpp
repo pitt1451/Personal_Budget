@@ -10,13 +10,19 @@ int UserManager::getLoggedUserId()
 
 void UserManager::registerUser()
 {
-    cout << "USER REGISTRATION" << endl;
+    cout << endl << "USER REGISTRATION" << endl << endl;
     User user = setNewUserData();
     users.push_back(user);
 
     userFile.addUserToFile(user);
 
     cout << endl << "Your account has been successfully created" << endl << endl;
+    system("pause");
+
+    for (User user: users)
+    {
+        cout << user.getLogin() << endl;
+    }
     system("pause");
 }
 

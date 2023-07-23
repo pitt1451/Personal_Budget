@@ -99,8 +99,7 @@ void PersonalBudget::userLogout()
 
 void PersonalBudget::userRegistration()
 {
-    cout << "userRegistration() works!" << endl;
-    system("pause");
+    userManager.registerUser();
 }
 
 void PersonalBudget::userLogin()
