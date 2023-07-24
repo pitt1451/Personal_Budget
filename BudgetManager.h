@@ -24,7 +24,8 @@ class BudgetManager
     void sortCashByDate();
 
 public:
-    BudgetManager(string expensesFileName, string incomesFileName, int idLoggedUser) : ID_LOGGED_USER(idLoggedUser)
+    BudgetManager(string expensesFileName, string incomesFileName, int idLoggedUser)
+    : ID_LOGGED_USER(idLoggedUser)
     {
 
     }

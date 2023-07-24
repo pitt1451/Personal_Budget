@@ -105,7 +105,11 @@ void PersonalBudget::userRegistration()
 
 void PersonalBudget::userLogin()
 {
-    cout << "userLogin() works!" << endl;
+    userManager.logInUser();
+    if (userManager.isUserLoggedIn())
+    {
+        budgetManager = new BudgetManager(EXPENSES_FILE_NAME, INCOMES_FILE_NAME, userManager.getLoggedUserId());
+    }
 }
 
 bool PersonalBudget::isUserLoggedIn()

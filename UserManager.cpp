@@ -46,6 +46,7 @@ void UserManager::logInUser()
                 if (users[i].getPassword() == password)
                 {
                     cout << endl << "You have correctly logged in" << endl << endl;
+                    system("pause");
                     loggedUserId = getLoggedUserId();
                     return;
                 }
