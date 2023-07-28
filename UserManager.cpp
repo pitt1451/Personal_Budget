@@ -47,7 +47,7 @@ void UserManager::logInUser()
                 {
                     cout << endl << "You have correctly logged in" << endl << endl;
                     system("pause");
-                    loggedUserId = getLoggedUserId();
+                    loggedUserId = users[i].getId();
                     return;
                 }
             }
