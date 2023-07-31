@@ -9,6 +9,11 @@
 
 using namespace std;
 
+void saveUserExpenseToFile(Expense expense)
+{
+
+}
+
 void LoadFileWithExpenses()
 {
      CMarkup xml;
@@ -33,4 +38,9 @@ void LoadFileWithExpenses()
     xml.AddElem("Password", "123");
     xml.AddElem("CurrentDate", CurrentDate);
     xml.Save("users.xml");
+}
+
+FileWithExpensesXML::FileWithExpensesXML()
+{
+
 }

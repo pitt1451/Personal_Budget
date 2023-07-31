@@ -13,10 +13,13 @@ class FileWithExpensesXML
 {
     int expenseId;
 
+    public:
+        FileWithExpensesXML();
+
+
     vector <Expense> loadUserExpenses();
     void saveUserExpenseToFile();
 
-public:
     void loadFileWithExpenses();
 };
 

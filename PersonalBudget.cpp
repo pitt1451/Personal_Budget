@@ -55,7 +55,7 @@ char PersonalBudget::chooseOptionFromUserMenu()
 
 void PersonalBudget::addIncome()
 {
-    cout << "addIncome() works!" << endl;
+    budgetManager->addNewIncome();
 }
 
 void PersonalBudget::showAllIncomes()

@@ -13,8 +13,12 @@ class FileWithIncomesXML
 {
     int incomeId;
 
+    public:
+        FileWithIncomesXML();
+
+
     vector <Income> loadUserIncomes();
-    void saveUserIncomeToFile();
+    void saveUserIncomeToFile(Income income);
 };
 
 #endif

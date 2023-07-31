@@ -15,12 +15,26 @@ class PersonalBudget
     const string INCOMES_FILE_NAME;
     const string EXPENSES_FILE_NAME;
 
+    FileWithIncomesXML incomesFileName;
+    FileWithExpensesXML expensesFileName;
+
 public:
     PersonalBudget(string expensesFileName, string incomesFileName, string usersFileName)
-    : userManager(usersFileName), INCOMES_FILE_NAME(incomesFileName), EXPENSES_FILE_NAME(expensesFileName)
+        : userManager(usersFileName), INCOMES_FILE_NAME(incomesFileName), EXPENSES_FILE_NAME(expensesFileName)
+
+
     {
         budgetManager = nullptr;
+
+            FileWithIncomesXML incomesFile;
+        vector<Income> userIncomes = incomesFile.loadUserIncomes();
+        budgetManager = new BudgetManager(expensesFileName, incomesFileName, userManager.getLoggedUserId());
+
     }
+        FileWithIncomesXML incomesFile;
+        vector<Income> userIncomes = incomesFile.loadUserIncomes();
+
+
 
     ~PersonalBudget()
     {

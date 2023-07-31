@@ -23,9 +23,11 @@ class BudgetManager
     FileWithExpensesXML expensesFileName;
     void sortCashByDate();
 
+    Income setNewIncome();
+
 public:
     BudgetManager(string expensesFileName, string incomesFileName, int idLoggedUser)
-    : ID_LOGGED_USER(idLoggedUser)
+    : ID_LOGGED_USER(idLoggedUser), incomesFileName(), expensesFileName()
     {
 
     }

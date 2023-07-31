@@ -24,6 +24,12 @@ public:
         this->amount = amount;
     }
 
+    int getIncomeId();
+    int getUserId();
+    string getDate();
+    int getItem();
+    int getAmount();
+
     Income();
 }
 ;
